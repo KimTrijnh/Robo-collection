@@ -14,7 +14,7 @@ import {Navbar, Form, FormControl, Button, Nav} from 'react-bootstrap'
         <Router>
        <Navbar bg="light" expand="lg">
        <div className="container">
-        <Navbar.Brand href="#home"><img src="http://icons.iconarchive.com/icons/noctuline/wall-e/256/Wall-E-icon.png" width="40px" alt="walle"/></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src="/public/img/Wall-E-icon.png" width="40px" alt="walle"/></Navbar.Brand>
           <Nav className="mr-auto">
             <NavLink className="mx-2 px-3" to="/"  
             activeStyle={{fontWeight: "bold", color: "blue" }}>Home</NavLink>
