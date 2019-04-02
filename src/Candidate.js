@@ -1,32 +1,22 @@
 import React from 'react'
-import {Card } from 'react-bootstrap'
 
 export default class Candidate extends React.Component {
     render() {
-        const can = this.props.can;
+        const candidate = this.props.candidate
         return(
-            <div className="col-sm-6 col-md-3 p-3">
-            <Card>
-                <Card.Title>
-                {can.first_name + can.last_name}
-                </Card.Title>
-                <Card.Body>
-                    <img className="cardImg" src={can.profilePic} alt={can.id}/>
-                </Card.Body>
-                <Card.Footer>
-                <button className="btn btn-primary">
-                    View
-                </button>
-                <button className="btn btn-success">
-                    Edit
-                </button>
-                <button className="btn btn-warning"> 
-                    Delete
-                </button>
-                </Card.Footer>
-
-            </Card>
-            </div> 
+            <div className="container">
+            <div className="mx-auto mt-5 text-center border-primary" >
+            <h1 className="py-2 text-light" style={{background: 'gray'}}>{candidate.first_name + ' ' +candidate.last_name}</h1>
+            <img className="img-fluid" src={candidate.profilePic} alt='avatar' style={{width: 120,height : 120}}/>
+            <ul className="list-unstyled mt-3">
+                <li>{candidate.gender}</li>
+                <li>Job: {candidate.last_job}</li>
+                <li>Skills: {candidate.skills}</li>
+                <li>Weight: N/A</li>
+                <li>height: N/A</li>
+            </ul>
+            </div>
+            </div>
         )
     }
 }
