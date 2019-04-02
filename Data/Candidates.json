@@ -1,24 +1,6 @@
 {
   "Candidates": [
     {
-      "first_name": "david",
-      "last_name": "beckham",
-      "gender": "Female",
-      "profilePic": "https://robohash.org/etsitminima.jpg?size=50x50&set=set1",
-      "skills": "Orchestral Music",
-      "last_job": "Chemical Engineer",
-      "id": 10
-    },
-    {
-      "id": 11,
-      "first_name": "Tucker",
-      "last_name": "Archer",
-      "gender": "Male",
-      "last_job": "Payment Adjustment Coordinator",
-      "skills": "QPST",
-      "profilePic": "https://robohash.org/eatotamoccaecati.png?size=50x50&set=set1"
-    },
-    {
       "id": 12,
       "first_name": "Calv",
       "last_name": "Petegree",

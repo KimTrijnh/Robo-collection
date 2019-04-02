@@ -22,7 +22,6 @@ class Main extends React.Component {
 
   async delCandidate (id) {
   const url = `http://localhost:3001/Candidates/${id}`;
-  console.log(url)
     try {
         let response = await fetch(url, {
             method: 'DELETE',
@@ -40,6 +39,7 @@ console.log(id)
 this.delCandidate(id)
 this.getData()
 }
+
 
   async componentDidMount() {
       this.getData ()

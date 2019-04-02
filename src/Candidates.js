@@ -7,6 +7,7 @@ export default class Candidates extends React.Component {
     handleClick(id) {
         this.props.handleDel(id)
     }
+    
     render() {
         const candidate = this.props.candidate;
         return(
@@ -30,7 +31,7 @@ export default class Candidates extends React.Component {
                 </button>
                 </Link>
                 
-                <button className="btn btn-warning ml-2" onClick={e => this.handleClick(candidate.id)}> 
+                <button className="btn btn-warning ml-2" onClick={() => this.handleClick(candidate.id)}> 
                     Delete
                 </button>
                 </Card.Footer>
